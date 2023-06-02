@@ -25,6 +25,7 @@ from api.apply_view import Apply
 from api.application_view import Application
 from api.availability_view import Availability
 from api.profile_status_view import ProfileStatus
+from api.query_view import Query
 
 urlpatterns = [
     path('login', UserLogin.as_view()),
@@ -39,4 +40,5 @@ urlpatterns = [
     path('applications',Application.as_view()),
     path('availability',Availability.as_view()),
     path('profile/status',ProfileStatus.as_view()),
+    path('query',Query.as_view())
 ]
